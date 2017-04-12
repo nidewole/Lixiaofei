@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="test.lixiaofei"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- SD卡读写权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DemoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 封装H5 实例 -->
+        <activity
+            android:name=".Test1WebViewActivity"
+            android:launchMode="singleInstance" />
+
+        <!-- 封装OkHttp实例 -->
+        <activity
+            android:name=".OkHttpDemoActivity"
+            android:launchMode="singleInstance" />
+
+        <!-- WiFi通信服务器端 -->
+        <activity
+            android:name=".WifiSerActivity"
+            android:launchMode="singleInstance" />
+        <!-- WiFi通信客户端 -->
+        <activity
+            android:name=".WifiClientActivity"
+            android:launchMode="singleInstance" />
+
+        <!-- CVSDK定位实时服务 -->
+        <service android:name="com.ctvit.dev.service.LocationSvc" />
+
+        <activity android:name=".AccusationActivity"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

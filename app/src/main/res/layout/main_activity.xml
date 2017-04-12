@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    
+        
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="定位中..."
+        android:textSize="20sp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnTest1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="封装H5 实例"
+        android:textSize="20sp"/>
+
+ 	<Button
+        android:visibility="gone"
+        android:id="@+id/btnTest2"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="封装OKHttp请求 实例"
+        android:textSize="20sp"/>
+  	<Button
+        android:visibility="gone"
+        android:id="@+id/btnTest3"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="test3"
+        android:textSize="20sp"/>
+   <Button
+       android:visibility="gone"
+        android:id="@+id/btnTest4"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="test4"
+        android:textSize="20sp"/>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnTest5"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="test5"
+        android:textSize="20sp"/>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnTest6"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="wifi通信服务器"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btnTest7"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="wifi通信客户端"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btnTest8"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="举报"
+        android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

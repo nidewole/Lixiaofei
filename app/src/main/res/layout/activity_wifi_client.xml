@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/et_send_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="40000"/>
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/et_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="192.168.1.9"/>
+
+
+    <EditText
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:id="@+id/et_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试数据..."/>
+      
+      <Button 
+          android:id="@+id/btnSendIp"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:text="连接socket"/>
+      
+    <Button
+        android:id="@+id/btnSendData"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="切换视频流"/>
+    
+
+</LinearLayout>
